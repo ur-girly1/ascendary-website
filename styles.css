@@ -36,7 +36,7 @@ body {
     z-index: 1000;                   /* Appears above all other content */
     background: rgba(0, 0, 0, 0.8);  /* Semi-transparent black */
     backdrop-filter: blur(10px);     /* Blur effect behind nav */
-    border-bottom: 1px solid rgba(212, 175, 55, 0.1);  /* Subtle gold border */
+    border-bottom: 1px solid rgba(192, 192, 192, 0.08);  /* Subtle silver border */
 }
 
 /* Logo styling */
@@ -47,7 +47,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: 3px;
-    color: #D4AF37;                  /* Gold color */
+    color: #C0C0C0;                  /* Silver color */
     font-family: 'Playfair Display', serif;
 }
 
@@ -106,7 +106,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(192, 192, 192, 0.03) 0%, transparent 70%);
     animation: pulse 8s ease-in-out infinite;  /* Pulsing animation */
 }
 
@@ -138,13 +138,14 @@ body {
     opacity: 0;                           /* Starts invisible */
     animation: fadeInUp 1.2s ease forwards 0.3s;  /* Fade in after 0.3s */
     font-family: 'Playfair Display', serif;
+    color: #C0C0C0; /* Make headline silver */
 }
 
 /* Highlighted word in headline (e.g., "Ascend") */
 .hero-highlight {
-    color: #D4AF37;                  /* Gold color */
+    color: #C0C0C0;                  /* Silver color */
     font-weight: 400;
-    font-style: italic;              /* Italic styling */
+    font-style: italic;
 }
 
 /* Hero subtitle text */
@@ -156,14 +157,15 @@ body {
     margin: 0 auto 3rem;
     opacity: 0;
     animation: fadeInUp 1.2s ease forwards 0.6s;  /* Fade in after 0.6s */
+    color: #C0C0C0; /* Make subtitle silver */
 }
 
 /* Primary call-to-action button */
 .cta-primary {
     padding: 1.2rem 3rem;
-    background: #D4AF37;             /* Gold background */
-    color: #000;                     /* Black text */
-    border: none;
+    background: transparent;
+    color: #C0C0C0;                  /* Silver text */
+    border: 1px solid rgba(192,192,192,0.18);
     font-size: 1rem;
     letter-spacing: 2px;
     cursor: pointer;
@@ -176,9 +178,9 @@ body {
 
 /* Button hover effect */
 .cta-primary:hover {
-    background: #fff;                /* White background on hover */
-    transform: translateY(-2px);     /* Lift up slightly */
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);  /* Gold shadow */
+    background: rgba(192,192,192,0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(192, 192, 192, 0.18);
 }
 
 /* Fade in and slide up animation */
@@ -239,7 +241,7 @@ body {
 .framework-card {
     background: linear-gradient(145deg, #0a0a0a, #000);
     padding: 3rem;
-    border: 1px solid rgba(212, 175, 55, 0.1);  /* Subtle gold border */
+    border: 1px solid rgba(192, 192, 192, 0.06);  /* Subtle silver border */
     transition: all 0.5s ease;
     position: relative;
     overflow: hidden;
@@ -253,7 +255,7 @@ body {
     left: -100%;                     /* Start off-screen to the left */
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.06), transparent);
     transition: left 0.6s ease;
 }
 
@@ -264,14 +266,14 @@ body {
 
 /* Card hover effect */
 .framework-card:hover {
-    border-color: rgba(212, 175, 55, 0.4);  /* Brighter gold border */
+    border-color: rgba(192, 192, 192, 0.18);  /* Brighter silver border */
     transform: translateY(-5px);            /* Lift up slightly */
 }
 
 /* Framework number (01, 02, 03) */
 .framework-number {
     font-size: 3rem;
-    color: #D4AF37;
+    color: #C0C0C0;
     font-weight: 200;
     margin-bottom: 1rem;
 }
@@ -342,7 +344,7 @@ body {
 /* Arrow icon before each feature */
 .mentorship-features li::before {
     content: '→';
-    color: #D4AF37;
+    color: #C0C0C0;
     font-size: 1.5rem;
 }
 
@@ -385,7 +387,7 @@ body {
 /* Labels (e.g., "Before", "After 18 Months") */
 .case-label {
     font-size: 0.9rem;
-    color: #D4AF37;
+    color: #C0C0C0;
     letter-spacing: 2px;
     margin-bottom: 1rem;
     text-transform: uppercase;
